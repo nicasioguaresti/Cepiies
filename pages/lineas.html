@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Líneas de investigación – CePIIeS</title>
+    <meta name="description" content="Conocé las líneas de investigación del CePIIeS – UNRN Sede Andina.">
+    <link rel="icon" href="../img/CePIIeS logo.ico">
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="header-logo-link">
+                <img src="../img/Logo-Cepiies-marco-blanco-_1_.ico" alt="Logo CePIIeS">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="sobreelcentro.html">Sobre el centro</a></li>
+                    <li><a href="equipo.html">Equipo de trabajo</a></li>
+                    <li><a href="#" class="activo">Líneas de investigación</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- BANNER -->
+    <section class="banner-pagina">
+        <div class="banner-pagina-texto">
+            <h1>Líneas de investigación</h1>
+            <p>El CePIIeS desarrolla investigaciones orientadas a comprender y mejorar distintas problemáticas vinculadas a la salud. Sus líneas de trabajo integran saberes de diversas disciplinas y buscan generar conocimiento útil para la comunidad, las instituciones y las políticas públicas.</p>
+        </div>
+    </section>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Bloques de líneas -->
+        <section class="seccion-lineas">
+            <h2>Áreas de trabajo</h2>
+
+            <div class="lineas-grid">
+
+                <article class="linea-card">
+                    <div class="linea-imagen">
+                        <img src="../img/pexel1.jpg" alt="Formación de profesionales de la salud">
+                    </div>
+                    <div class="linea-texto">
+                        <h3>Formación de profesionales de la salud</h3>
+                        <span class="etiqueta">PROYECTOS ACTIVOS: 4</span>
+                        <p>Investiga formación y prácticas en ciencias de la salud.</p>
+                        <button type="button" class="btn-ver-mas" onclick="document.getElementById('modal-1').showModal()">Ver más →</button>
+                    </div>
+                </article>
+
+                <article class="linea-card">
+                    <div class="linea-imagen">
+                        <img src="../img/Uni rio negro.png" alt="Enfermedades zoonóticas">
+                    </div>
+                    <div class="linea-texto">
+                        <h3>Enfermedades zoonóticas</h3>
+                        <span class="etiqueta">PROYECTOS ACTIVOS: 2</span>
+                        <p>Investiga epidemiología, prevención y control de zoonosis en nuestra región.</p>
+                        <button type="button" class="btn-ver-mas" onclick="document.getElementById('modal-2').showModal()">Ver más →</button>
+                    </div>
+                </article>
+
+                <article class="linea-card">
+                    <div class="linea-imagen">
+                        <img src="../img/pexels2.jpg" alt="Procesos salud-enfermedad atención cuidados">
+                    </div>
+                    <div class="linea-texto">
+                        <h3>Procesos salud-enfermedad-atención-cuidados</h3>
+                        <span class="etiqueta">PROYECTOS ACTIVOS: 5</span>
+                        <p>Analiza atención, cuidado y prevención de enfermedades prevalentes.</p>
+                        <button type="button" class="btn-ver-mas" onclick="document.getElementById('modal-3').showModal()">Ver más →</button>
+                    </div>
+                </article>
+
+                <article class="linea-card">
+                    <div class="linea-imagen">
+                        <img src="../img/zoonoticas.jpg" alt="Salud colectiva">
+                    </div>
+                    <div class="linea-texto">
+                        <h3>Salud colectiva</h3>
+                        <span class="etiqueta">PROYECTOS ACTIVOS: 6</span>
+                        <p>Estudia modelos de gestión, participación y evidencia para políticas públicas.</p>
+                        <button type="button" class="btn-ver-mas" onclick="document.getElementById('modal-4').showModal()">Ver más →</button>
+                    </div>
+                </article>
+
+                <article class="linea-card">
+                    <div class="linea-imagen">
+                        <img src="../img/imagen cepi1.jpg" alt="Ciencias básicas">
+                    </div>
+                    <div class="linea-texto">
+                        <h3>Ciencias básicas</h3>
+                        <span class="etiqueta">PROYECTOS ACTIVOS: 2</span>
+                        <p>Analiza mecanismos biológicos implicados en salud y enfermedades humanas.</p>
+                        <button type="button" class="btn-ver-mas" onclick="document.getElementById('modal-5').showModal()">Ver más →</button>
+                    </div>
+                </article>
+
+                <article class="linea-card linea-card--letis">
+                    <div class="linea-imagen">
+                        <img src="../img/Letis linea.jpg" alt="Evaluación de tecnologías sanitarias">
+                    </div>
+                    <div class="linea-texto">
+                        <h3>Evaluación de tecnologías sanitarias</h3>
+                        <p>Laboratorio de Evaluación de Tecnologías e Investigación Sanitaria</p>
+                        <a href="https://letisunrn.org/" target="_blank" class="link-externo">Ver LETIS →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!--Enfoque de trabajo-->
+        <section class="seccion-enfoque">
+            <h2>Nuestro enfoque de trabajo</h2>
+            <p>Las investigaciones del centro se desarrollan desde una perspectiva interdisciplinaria, integrando aportes de distintas áreas del conocimiento. Se prioriza el trabajo colaborativo, el análisis riguroso y la generación de resultados aplicables a necesidades reales.</p>
+        </section>
+
+    </main>
+
+
+    <!-- MODALES — uno por cada línea de investigación -->
+
+    <dialog id="modal-1" class="linea-modal">
+        <div class="linea-modal-header">
+            <h3>Formación de profesionales de la salud</h3>
+            <button type="button" class="linea-modal-cerrar" onclick="document.getElementById('modal-1').close()" aria-label="Cerrar">×</button>
+        </div>
+        <div class="linea-modal-cuerpo">
+            <p>Esta línea de investigación busca conocer aspectos vinculados a la formación de recursos humanos en ciencias de la salud, tanto desde lo formativo propiamente dicho como desde las determinantes y prácticas sociales concretas vinculadas a la región.</p>
+            <p>Integrantes: Mariela Bellotti, Germán Guaresti, Celia Tognetti, Isabella Ceola y Mónica Quevedo</p>
+            
+            <p class="linea-modal-subtitulo">Proyectos activos</p>
+            <ul class="linea-modal-articulos">
+                <li><a>La evaluación continua como herramienta de fortalecimiento de la formación de estudiantes de la carrera de Medicina de la UNRN.<br>→ Contacto: ctognetti@unrn.edu.ar</a></li>
+                <li><a>Realidad virtual e inteligencia artificial para enseñanza y aprendizaje de habilidades profesionales para el equipo de salud.<br>→ Contacto: ggguaresti@unrn.edu.ar</a></li>
+                <li><a>Adquisición de habilidades de comunicación en estudiantes de medicina.<br>→ Contacto: ggguaresti@unrn.edu.ar</a></li>
+                <li><a>La evaluación de competencias médicas en el Aprendizaje Basado en Problemas y su contribución a la construcción de identidad profesional de estudiantes de la Carrera de Medicina de la UNRN.<br>→ Contacto: mbquevedo@unrn.edu.ar</a></li>
+                <li><a></a></li>
+            </ul>
+        
+            <p class="linea-modal-subtitulo">Artículos publicados</p>
+            <ul class="linea-modal-articulos">
+                <li><a href="#" target="_blank">Lorem ipsum: título de artículo de ejemplo sobre formación en salud →</a></li>
+                <li><a href="#" target="_blank">Lorem ipsum: segundo título de artículo de ejemplo →</a></li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-2" class="linea-modal">
+        <div class="linea-modal-header">
+            <h3>Enfermedades zoonóticas</h3>
+            <button type="button" class="linea-modal-cerrar" onclick="document.getElementById('modal-2').close()" aria-label="Cerrar">×</button>
+        </div>
+        <div class="linea-modal-cuerpo">
+            <p>Esta línea investiga epidemiología, abordajes y estrategias de control de las enfermedades comunes a seres humanos y a animales en nuestra región; desarrollo de estrategias para la prevención y control de las zoonosis.</p>
+            <p>Integrantes: Fernando Tortosa, Juan C. Salvitti, Natalia Artola, Lucía Lossetti y Germán Guaresti.</p>
+            
+            <p class="linea-modal-subtitulo">Proyectos activos</p>
+            <ul class="linea-modal-articulos">
+                <li><a>Evaluación de factores pronósticos y tratamiento del sindrome pulmonar por hantavirus.<br>→ Contacto: fgtortosa@unrn.edu.ar</a></li>
+                <li><a>Herramienta de estratificación de riesgo de infección por hantavirus en la región endémica Sur: integración de evidencia local y revisión sistemática.<br>→ Contacto: fgtortosa@unrn.edu.ar</a></li>
+                <li><a>Prevalencia de Equinococosis Quística en población rural de las Regiones Andina y Sur de la provincia Río Negro.<br>→ Contacto: jcsalvitti@unrn.edu.ar</a></li>
+            </ul>
+            
+            <p class="linea-modal-subtitulo">Artículos publicados</p>
+            <ul class="linea-modal-articulos">
+                <li><a href="#" target="_blank">Lorem ipsum: título de artículo de ejemplo sobre zoonosis →</a></li>
+                <li><a href="#" target="_blank">Lorem ipsum: segundo título de artículo de ejemplo →</a></li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-3" class="linea-modal">
+        <div class="linea-modal-header">
+            <h3>Procesos salud-enfermedad-atención-cuidados</h3>
+            <button type="button" class="linea-modal-cerrar" onclick="document.getElementById('modal-3').close()" aria-label="Cerrar">×</button>
+        </div>
+        <div class="linea-modal-cuerpo">
+            <p>Con esta línea de investigación se busca indagar sobre las prácticas vinculadas a los procesos de atención y cuidado, reconocer sus actores y relaciones, fortalezas y puntos de mejora en particular con relación a la prevención de enfermedades prevalentes y endémicas.</p>
+            <p>Integrantes: Paola D'Adamo, Betina Buttó, Lorena Leive, Agustín Iglesias y Cristian Barbaro.</p>
+            
+            <p class="linea-modal-subtitulo">Proyectos activos</p>
+            <ul class="linea-modal-articulos">
+                <li><a>La agencia de les niñes al aprender: su experiencia, recursos y perspectivas"<br>Contacto: pdadamo@unrn.edu.ar</a></li>
+                <li><a>Efecto modulatorio de intervenciones comportamentales sobre estados de estrés crónico, procesos inflamatorios y epigenéticos asociados, y cognición social en niños y docentes.<br>→ Contacto: pdadamo@unrn.edu.ar</a></li>
+                <li><a>Prácticas de integración cuerpo-mente. Impacto de una intervención corporizada, participativa y lúdica sobre el estrés, bienestar psicofísico, calidad del sueño y relaciones interpersonales en docentes.<br>→ Contacto: pdadamo@unrn.edu.ar</a></li>
+                <li><a>Validación de un sistema basado en sistemas expertos embebidos para facilitar la toma de decisiones en emergencias médicas.<br>→ Contacto: crbarbaro@unrn.edu.ar</a></li>
+                <li><a>Diseño, implementación y evaluación de una intervención escolar participativa para abordar la salud y la calidad de vida en población escolar de S. C. de Bariloche: del diagnóstico local a la co-construcción de estrategias.<br>→ Contacto: bbutto@unrn.edu.ar</a></li>
+                <li><a></a></li>
+            </ul>
+
+            <p class="linea-modal-subtitulo">Artículos publicados</p>
+            <ul class="linea-modal-articulos">
+                <li><a href="#" target="_blank">Lorem ipsum: título de artículo de ejemplo sobre cuidados →</a></li>
+                <li><a href="#" target="_blank">Lorem ipsum: segundo título de artículo de ejemplo →</a></li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-4" class="linea-modal">
+        <div class="linea-modal-header">
+            <h3>Salud colectiva</h3>
+            <button type="button" class="linea-modal-cerrar" onclick="document.getElementById('modal-4').close()" aria-label="Cerrar">×</button>
+        </div>
+        <div class="linea-modal-cuerpo">
+            <p>Con esta línea se busca indagar sobre los procesos de construcción de modelos de gestión, acciones participativas y generación de evidencia sobre políticas públicas.</p>
+            <p>Integrantes: Serena Perner, Juan M. Mompó, Germán Guaresti e Isabella Ceola.</p>
+            
+            <p class="linea-modal-subtitulo">Proyectos activos</p>
+            <ul class="linea-modal-articulos">
+                <li><a>El tiempo como condición de acceso a la salud: análisis de desigualdades en la zona andina de Río Negro.<br>→ Contacto: msperner@unrn.edu.ar</a></li>
+                <li><a>Potencial impacto en la salud poblacional a nivel nacional y de una provincia (Río Negro) de reducir el consumo de azúcar en niñas, niños y adolescentes mediante la prohibición de la publicidad, promoción y patrocinio a las bebidas azucaradas.<br>→ Contacto: ggguaresti@unrn.edu.ar</a></li>
+                <li><a>Análisis de la distribución temporal y espacial de Cáncer en Villa la Angostura (VLA), Neuquén, en el período 2000-2022 y su asociación con factores socioambientales.<br>→ Contacto: iceola@unrn.edu.ar</a></li>
+                <li><a>Consumo de tabaco y dispositivos electrónicos en estudiantes de Bariloche y Dina Huapi: un estudio transversal en población escolar.<br>→ Contacto: ggguaresti@unrn.edu.ar</a></li>
+                <li><a>Health Protect - Argentina team. Implementing interventions to reduce health inequalities and mitigate the impact of economic crises in Latin America.<br>→ Contacto: msperner@unrn.edu.ar</a></li>
+                <li><a>Salud Urbana en América Latina - clima (SALURBAL-climate) - Climate change and urban health in Latin America.<br>→ Contacto: msperner@unrn.edu.ar</a></li>
+                <li><a></a></li>
+            </ul>
+
+            <p class="linea-modal-subtitulo">Artículos publicados</p>
+            <ul class="linea-modal-articulos">
+                <li><a href="https://www.sap.org.ar/docs/publicaciones/archivosarg/2024/v122n6a12.pdf" target="_blank">Artículo publicado: “Obesidad infantil y bebidas azucaradas en Río Negro: carga de enfermedad e impacto esperado de la Ley 27642 de Promoción de la Alimentación Saludable” →</a></li>
+                <li><a href="#" target="_blank">Lorem ipsum: segundo título de artículo de ejemplo →</a></li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-5" class="linea-modal">
+        <div class="linea-modal-header">
+            <h3>Ciencias básicas</h3>
+            <button type="button" class="linea-modal-cerrar" onclick="document.getElementById('modal-5').close()" aria-label="Cerrar">×</button>
+        </div>
+        <div class="linea-modal-cuerpo">
+            <p>Esta línea investiga mecanismos moleculares, celulares y fisiológicos subyacentes a la salud humana y sus patologías. Su propósito es generar conocimiento fundamental para el descubrimiento de nuevos biomarcadores, el diseño de dianas terapéuticas y la comprensión de enfermedades complejas.</p>
+            <p>Integrantes: Yimy Amarillo, Mariela Bellotti, Ángela Tissone y Mariana Raineri.</p>
+            
+            <p class="linea-modal-subtitulo">Proyectos activos</p>
+            <ul class="linea-modal-articulos">
+                <li><a>Desarrollo de un modelo mecanístico y falsable de la consciencia basado en la dinámica talamocortical mediante revisión bibliográfica profunda.<br>→ Contacto: yamarillogomez@unrn.edu.ar</a></li>
+                <li><a>Evaluación de la conducción de impedancia eléctrica corneal mediante dispositivo de sondaje: caracterización de patrones en superficie ocular sana y en pacientes con penfigoide ocular cicatrizal.<br>→ Contacto: mibellotti@unrn.edu.ar</a></li>
+                <li><a></a></li>
+            </ul>
+            
+            <p class="linea-modal-subtitulo">Artículos publicados</p>
+            <ul class="linea-modal-articulos">
+                <li><a href="#" target="_blank">Lorem ipsum: título de artículo de ejemplo sobre ciencias básicas →</a></li>
+                <li><a href="#" target="_blank">Lorem ipsum: segundo título de artículo de ejemplo →</a></li>
+            </ul>
+        </div>
+    </dialog>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../img/Logo Cepiies marco blanco.jpg" alt="Logo CePIIeS">
+                <p>Centro Patagónico Interdisciplinario de Investigaciones en Salud</p>
+                <p>UNRN Sede Andina – Bariloche</p>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <address>
+                    <p>mibellotti@unrn.edu.ar</p>
+                    <p>Mitre 630, Bariloche, Río Negro</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-fondo">
+            <p>© 2026 CePIIeS – Universidad Nacional de Río Negro. Todos los derechos reservados.</p>
+            <p>Sitio desarrollado por <a href="https://www.linkedin.com/in/nicasio-guaresti-669027424" target="_blank" class="footer-credit-link">Nicasio Guaresti</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

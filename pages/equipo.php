@@ -7,6 +7,174 @@
     <meta name="description" content="Conocé el equipo interdisciplinario del CePIIeS – UNRN Sede Andina.">
     <link rel="icon" href="../img/CePIIeS logo.ico">
     <link rel="stylesheet" href="../stylesheet.css">
+
+<style>
+    .seccion-postulacion {
+        padding: 50px 20px;
+        background-color: #f8fafc;
+        margin-top: 50px;
+        border-top: 1px solid var(--gris);
+    }
+
+    .form-postulacion-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, #d4e6f7 0%, #ffffff 85%);
+        padding: 35px 40px;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+        border: 2px solid #cbd5e1;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-postulacion-container:hover {
+        border-color: var(--celeste);
+        box-shadow: 0 8px 25px rgba(0, 114, 206, 0.15);
+    }
+
+    .form-postulacion-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-postulacion-header h2 {
+        font-size: 22px;
+        color: var(--azul-oscuro);
+        margin-bottom: 16px;
+    }
+
+    .form-postulacion-header p {
+        color: var(--texto-suave);
+        font-size: 15px;
+        max-width: 750px;
+        margin: 0 auto;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 24px;
+    }
+
+    .form-group.full-width,
+    .form-actions {
+        grid-column: span 2;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--azul-oscuro);
+        font-size: 14px;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        width: 100%;
+        padding: 11px 14px;
+        font-size: 14px;
+        border: 1.5px solid #cbd5e1;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.92);
+        transition: all 0.25s ease;
+        font-family: inherit;
+        box-sizing: border-box;
+    }
+
+    .form-group input:focus, 
+    .form-group select:focus, 
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--celeste);
+        background-color: #ffffff;
+        box-shadow: 0 0 0 3px rgba(0, 114, 206, 0.15);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 110px;
+    }
+
+    .form-actions {
+        text-align: right;
+        margin-top: 8px;
+    }
+
+    .btn-postular {
+        background-color: var(--azul-oscuro);
+        color: #ffffff;
+        padding: 13px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14.5px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.25s ease;
+        display: inline-block;
+    }
+
+    .btn-postular:hover {
+        background-color: #002244;
+    }
+
+    .alert-success,
+    .alert-error {
+        padding: 14px 18px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .alert-success {
+        color: #0f5132;
+        background-color: #d1e7dd;
+        border: 1px solid #badbcc;
+    }
+
+    .alert-error {
+        color: #842029;
+        background-color: #f8d7da;
+        border: 1px solid #f5c2c7;
+    }
+
+    /* Responsive */
+    @media (max-width: 868px) {
+        .seccion-postulacion { padding: 40px 15px; }
+        .form-postulacion-container { padding: 30px 25px; }
+    }
+
+    @media (max-width: 640px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        .form-group.full-width,
+        .form-actions {
+            grid-column: span 1;
+        }
+        .form-actions { text-align: center; }
+        .btn-postular { width: 100%; }
+        .form-postulacion-container { padding: 22px 16px; }
+        .form-postulacion-header h2 { 
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .form-postulacion-header p { font-size: 14px; text-align: left; }
+    }
+</style>
+
 </head>
 <body>
 
@@ -20,14 +188,13 @@
                 <ul>
                     <li><a href="../index.php">Inicio</a></li>
                     <li><a href="sobreelcentro.html">Sobre el centro</a></li>
-                    <li><a href="#" class="activo">Equipo de trabajo</a></li>
+                    <li><a href="equipo.php" class="activo">Equipo de trabajo</a></li>
                     <li><a href="lineas.html">Líneas de investigación</a></li>
                     <li><a href="../index.php#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
 
     <!-- BANNER CON IMAGEN -->
     <section class="banner-sobre">
@@ -37,7 +204,6 @@
             <p>El CePIIeS está conformado por un equipo diverso de profesionales, docentes e investigadores comprometidos con la producción de conocimiento y la mejora de problemáticas vinculadas a la salud.</p>
         </div>
     </section>
-
 
     <!-- MAIN -->
     <main>
@@ -228,7 +394,7 @@
                     <p>Investigadora concurrente</p>
                 </article>
 
-                                <article class="integrante">
+                <article class="integrante">
                     <div class="integrante-foto">
                         <img src="../img/Natalia.jpg" alt="Foto integrante 14">
                     </div>
@@ -279,11 +445,68 @@
             </div>
         </section>
 
+       <!-- SECCIÓN: FORMULARIO PARA POSTULANTES -->
+        <section class="seccion-postulacion" id="postularse">
+            <div class="form-postulacion-container">
+                <div class="form-postulacion-header">
+                    <h2>¿Querés sumarte a nuestro equipo?</h2>
+                    <p>Si sos docente, investigador o profesional interesado en postularte para integrar las líneas de trabajo del CePIIeS, completá el siguiente formulario:</p>
+                </div>
+
+                <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
+                    <div class="alert-success">¡Postulación enviada con éxito! Nos pondremos en contacto a la brevedad.</div>
+                <?php elseif (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
+                    <div class="alert-error">Hubo un error al enviar la postulación. Por favor verificá los datos e intentalo de nuevo.</div>
+                <?php endif; ?>
+
+                <form action="../procesar_postulacion.php" method="POST" class="form-grid">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Dra. María González">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@unrn.edu.ar">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de contacto</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+54 294 4000000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="linea_interes">Línea de investigación de interés *</label>
+                        <select id="linea_interes" name="linea_interes" required>
+                            <option value="">-- Seleccionar línea --</option>
+                            <option value="Salud ambiental">Salud ambiental</option>
+                            <option value="Epidemiología regional">Epidemiología regional</option>
+                            <option value="Políticas públicas en salud">Políticas públicas en salud</option>
+                            <option value="Formación de profesionales de la salud">Formación de profesionales de la salud</option>
+                            <option value="Enfermedades zoonóticas">Enfermedades zoonóticas</option>
+                            <option value="Procesos salud-enfermedad">Procesos salud-enfermedad</option>
+                            <option value="Otra / General">Otra / General</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="antecedentes">Titulación y breve resumen de antecedentes *</label>
+                        <textarea id="antecedentes" name="antecedentes" required placeholder="Indica tu profesión, títulos académicos y experiencia previa en investigación..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-postular">Enviar Postulación</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
 
         <!-- Trabajo interdisciplinario -->
         <section class="seccion-interdisciplinario">
             <h2>Trabajo interdisciplinario</h2>
-            <p>La diversidad de trayectorias y disciplinas fortalece una mirada integral sobre los desafíos actuales en salud, promoviendo enfoques colaborativos y soluciones innovadoras.</p>
+            <p>La diversidad de trayectorias y disciplines fortalece una mirada integral sobre los desafíos actuales en salud, promoviendo enfoques colaborativos y soluciones innovadoras.</p>
 
             <div class="interdisciplinario-cta">
                 <p>¿Querés conocer las líneas de trabajo del centro o ponerte en contacto?</p>
@@ -295,7 +518,6 @@
         </section>
 
     </main>
-
 
     <!-- FOOTER -->
     <footer>

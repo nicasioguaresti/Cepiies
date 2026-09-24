@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="#" class="activo">Inicio</a></li>
                     <li><a href="./pages/sobreelcentro.html">Sobre el centro</a></li>
-                    <li><a href="./pages/equipo.html">Equipo de trabajo</a></li>
+                    <li><a href="./pages/equipo.php">Equipo de trabajo</a></li>
                     <li><a href="./pages/lineas.html">Líneas de investigación</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>

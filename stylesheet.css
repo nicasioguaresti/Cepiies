@@ -1021,7 +1021,6 @@ a.metrica-link:hover .metrica-numero { text-decoration: underline; text-underlin
     font-size: 14px;
     margin-bottom: 6px;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -1031,7 +1030,6 @@ a.metrica-link:hover .metrica-numero { text-decoration: underline; text-underlin
     color: var(--texto-suave);
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

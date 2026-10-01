@@ -468,7 +468,7 @@
 
                     <div class="form-group">
                         <label for="email">Correo electrónico *</label>
-                        <input type="email" id="email" name="email" required placeholder="ejemplo@unrn.edu.ar">
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
                     </div>
 
                     <div class="form-group">

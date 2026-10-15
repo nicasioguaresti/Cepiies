@@ -512,7 +512,7 @@
                 <p>¿Querés conocer las líneas de trabajo del centro o ponerte en contacto?</p>
                 <div class="cta-botones">
                     <a href="lineas.html" class="btn-institucional-primario">Líneas de investigación</a>
-                    <a href="../index.html#contacto" class="btn-institucional-secundario">Contacto</a>
+                    <a href="../index.php#contacto" class="btn-institucional-secundario">Contacto</a>
                 </div>
             </div>
         </section>

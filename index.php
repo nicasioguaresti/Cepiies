@@ -13,21 +13,39 @@
 
     <!-- HEADER -->
     <header>
-        <div class="header-container">
-            <a href="./index.php" class="header-logo-link">
-                <img src="img/Logo-Cepiies-marco-blanco-_1_.ico" alt="Logo CePIIeS – Ir al inicio">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="./pages/sobreelcentro.html">Sobre el centro</a></li>
-                    <li><a href="./pages/equipo.php">Equipo de trabajo</a></li>
-                    <li><a href="./pages/lineas.html">Líneas de investigación</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="header-container">
+        <a href="./index.php" class="header-logo-link">
+            <img src="img/Logo-Cepiies-marco-blanco-_1_.ico" alt="Logo CePIIeS – Ir al inicio">
+        </a>
+        
+        <!-- BUSCADOR DEL SITIO -->
+        <form action="buscar.php" method="GET" class="header-buscador">
+            <input 
+                type="search" 
+                name="q" 
+                placeholder="Buscar..." 
+                value="<?php echo htmlspecialchars($_GET['q'] ?? ''); ?>" 
+                required
+            >
+            <button type="submit" aria-label="Buscar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="activo">Inicio</a></li>
+                <li><a href="./pages/sobreelcentro.html">Sobre el centro</a></li>
+                <li><a href="./pages/equipo.php">Equipo de trabajo</a></li>
+                <li><a href="./pages/lineas.html">Líneas de investigación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 
     <!-- HERO -->
@@ -77,7 +95,7 @@
     <!-- MAIN -->
     <main>
 
-        <section class="seccion-novedades">
+        <section class="seccion-novedades" id="novedades">
         <h2>Novedades</h2>
 
         <div class="novedades-layout">
@@ -250,7 +268,7 @@
         </section>
 
 
-        <section class="seccion-convenios">
+        <section class="seccion-convenios" id="vinculaciones">
             <h2>Vinculaciones</h2>
             <p class="convenios-descripcion">El centro promueve asociaciones con grupos, instituciones públicas y privadas, nacionales e internacionales.</p>
             <div class="carrusel-wrapper">

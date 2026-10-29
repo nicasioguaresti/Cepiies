@@ -383,6 +383,7 @@
                 <address>
                     <p>mibellotti@unrn.edu.ar</p>
                     <p>Mitre 630, Bariloche, Río Negro</p>
+                    <a href="login.php" style="color: #aaa; font-size: 0.8rem; text-decoration: none;">Acceso Institucional (Admin)</a>
                 </address>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <?php
-// Configuracion de la base de datos en XAMPP (dice "bd_" para aclarar que va a base de datos)
+// Configuracion de la base de datos en XAMPP
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = ''; 

@@ -53,8 +53,9 @@ Para proteger los mensajes recibidos y evitar accesos no autorizados, el panel d
 ## 📸 Capturas de Pantalla
 
 ### 1. Navegación del Sitio y Buscador
-![Vista principal del sitio](img/captura_home.png)
+![Vista principal del sitio](img/iniciositio.png)
 ![Buscador y sección](img/captura_buscador.png)
+![Página de Líneas de investigación](img/captura lineas.png)
 
 ### 2. Zona Segura (Login y Panel de Administración)
 ![Login institucional](img/captura_login.png)

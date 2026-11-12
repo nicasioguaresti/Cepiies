@@ -58,7 +58,7 @@ Para proteger los mensajes recibidos y evitar accesos no autorizados, el panel d
 
 ### 2. Zona Segura (Login y Panel de Administración)
 ![Login institucional](img/captura_login.png)
-![Panel de administración con mensajes](img/capturaadmin)
+![Panel de administración con mensajes](img/capturaadmin.png)
 
 ### 3. Estructura de la Base de Datos (`contacto_cepiies` en phpMyAdmin)
 ![Estructura de tablas en phpMyAdmin](img/captura_bd_tablas.png)
